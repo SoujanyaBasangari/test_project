@@ -9,10 +9,7 @@
 public class Time{
    public static void main(String args[]){
    
-      int timeOfDayInSeconds = 24 * 60 * 60;
-   
-      int hour = 18, minute = 58, second = 10;
-      int timeSinceMidnightInSeconds = hour * 3600 + minute * 60 + second;
+     
    
       int timeLeftInSeconds = timeOfDayInSeconds - timeSinceMidnightInSeconds;
    
