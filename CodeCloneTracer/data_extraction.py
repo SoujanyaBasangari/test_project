@@ -30,6 +30,7 @@ def extractMethods(url):
     metric = LinesCount(path_to_repo=url,from_commit=first_commit,to_commit=latest_commit)
     total_lines = metric.count()
     print('Total lines : {}'.format(sum(total_lines.values())))
+    total_lines = sum(total_lines.values())
     codeBlocks={}
     for commit in Repository(url,only_commits=[latest_commit]).traverse_commits():#,only_commits=[latest_commit]
         filename_list=[]
@@ -71,7 +72,7 @@ def extractMethods(url):
                  'codeCloneBlock_Fileinfo', 'Similarity_Tokens', 'Similarity_Variable_Flow',
                  'Similarity_MethodCall_Flow', 'commitinfo', 'nloc', 'Revision','change_type','committer_date'])
     
-    previous_file_name = Config.granularity + 'tracking.csv'
+    previous_file_name = Config.granularity + 'gittracking.csv'
    
     if os.path.isfile(previous_file_name): 
       previous_dataset = pd.read_csv(previous_file_name, index_col=0)
@@ -90,12 +91,14 @@ def extractMethods(url):
  
     current_dataset = dataset_creation(cloneBlocks)
     current_dataset['nloc'] = current_dataset['nloc'].astype(int)
-    codeclonelines = current_dataset.groupby('codeBlockId').apply(lambda x: x['nloc'].unique()).sum()#['nloc']
+    #codeclonelines = current_dataset.groupby('codeBlockId').apply(lambda x: x['nloc'].unique()).sum()#['nloc']
+    current_dataset['sum'] = current_dataset.groupby('codeBlockId')['nloc'].sum()
+    print(codeclonelines,type(codeclonelines),codeclonelines)
+    codeclonelines = current_dataset['sum'].sum()
     print("detecting code clones",len(cloneBlocks),codeclonelines)
-    
     current_dataset = current_dataset[current_dataset["codeBlockId"].str.contains("old") == False]
     print("Transforming detected code blocks into dataset",current_dataset.shape)
-
+   
     if os.path.isfile(previous_file_name): 
         previous_dataset = pd.read_csv(previous_file_name, index_col=0)
         revision = previous_dataset.Revision.unique()
@@ -120,10 +123,10 @@ def extractMethods(url):
     current_dataset = current_dataset.reset_index(drop=True)
     current_dataset = current_dataset.drop_duplicates()
     current_dataset = current_dataset.reset_index(drop=True)
-    current_dataset.to_csv(Config.granularity + 'tracking.csv')
-    return current_dataset, total_lines, codeclonelines[0],len(filename_list)
+    current_dataset.to_csv(Config.granularity + 'gittracking.csv')
+    return current_dataset, total_lines, codeclonelines,len(filename_list)
 
-def extractMethods(url,first_time = True):
+def extractMethods_first(url):
     allFilesMethodsBlocks = {}
     linesofcode = 0
     blocksSoFar = 0
@@ -138,6 +141,7 @@ def extractMethods(url,first_time = True):
     metric = LinesCount(path_to_repo=url,from_commit=first_commit,to_commit=latest_commit)
     total_lines = metric.count()
     print('Total lines : {}'.format(sum(total_lines.values())))
+    total_lines = sum(total_lines.values())
     codeBlocks={}
     for commit in Repository(url,only_commits=[latest_commit]).traverse_commits():#,only_commits=[latest_commit]
         filename_list=[]
@@ -179,7 +183,7 @@ def extractMethods(url,first_time = True):
                  'codeCloneBlock_Fileinfo', 'Similarity_Tokens', 'Similarity_Variable_Flow',
                  'Similarity_MethodCall_Flow', 'commitinfo', 'nloc', 'Revision','change_type','committer_date'])
     
-    previous_file_name = Config.granularity + 'tracking.csv'
+    previous_file_name = Config.granularity + 'analysistracking.csv'
    
     if os.path.isfile(previous_file_name): 
       previous_dataset = pd.read_csv(previous_file_name, index_col=0)
@@ -198,7 +202,9 @@ def extractMethods(url,first_time = True):
  
     current_dataset = dataset_creation(cloneBlocks)
     current_dataset['nloc'] = current_dataset['nloc'].astype(int)
-    codeclonelines = current_dataset.groupby('codeBlockId').apply(lambda x: x['nloc'].unique()).sum()#['nloc']
+    #codeclonelines = current_dataset.groupby('codeBlockId').apply(lambda x: x['nloc'].unique()).sum()#['nloc']
+    codeclonelines = current_dataset.groupby('codeBlockId')['nloc'].sum()
+    codeclonelines = codeclonelines['nloc'].sum()
     print("detecting code clones",len(cloneBlocks),codeclonelines)
     
     current_dataset = current_dataset[current_dataset["codeBlockId"].str.contains("old") == False]
@@ -228,8 +234,8 @@ def extractMethods(url,first_time = True):
     current_dataset = current_dataset.reset_index(drop=True)
     current_dataset = current_dataset.drop_duplicates()
     current_dataset = current_dataset.reset_index(drop=True)
-    current_dataset.to_csv(Config.granularity + 'tracking.csv')
-    return current_dataset, linesofcode, codeclonelines[0],len(filename_list)
+    current_dataset.to_csv(Config.granularity + 'analysistracking.csv')
+    return current_dataset,total_lines, codeclonelines,len(filename_list)
 
 
 def extractMethodsAllFiles(listOfFiles):

@@ -1,84 +1,84 @@
 cloneset1
-['R9CodeBlock55', 'R9CodeBlock56']
+['R19CodeBlock55', 'R19CodeBlock56']
 
 cloneset2
-['R9CodeBlock39', 'R9CodeBlock32']
+['R19CodeBlock39', 'R19CodeBlock32']
 
 cloneset3
-['R9CodeBlock51', 'R9CodeBlock44']
+['R19CodeBlock51', 'R19CodeBlock44']
 
 cloneset4
-['R9CodeBlock36', 'R9CodeBlock40']
+['R19CodeBlock36', 'R19CodeBlock40']
 
 cloneset5
-['R9CodeBlock37', 'R9CodeBlock41']
+['R19CodeBlock37', 'R19CodeBlock41']
 
 cloneset6
-['R9CodeBlock48', 'R9CodeBlock52']
+['R19CodeBlock48', 'R19CodeBlock52']
 
 cloneset7
-['R9CodeBlock1', 'R9CodeBlock33']
+['R19CodeBlock1', 'R19CodeBlock33']
 
 cloneset8
-['R9CodeBlock8', 'R9CodeBlock10']
+['R19CodeBlock8', 'R19CodeBlock10']
 
 cloneset9
-['R9CodeBlock23', 'R9CodeBlock24']
+['R19CodeBlock23', 'R19CodeBlock24']
 
 cloneset10
-['R9CodeBlock7', 'R9CodeBlock9']
+['R19CodeBlock7', 'R19CodeBlock9']
 
 cloneset11
-['R9CodeBlock34', 'R9CodeBlock35']
+['R19CodeBlock34', 'R19CodeBlock35']
 
 cloneset12
-['R9CodeBlock46', 'R9CodeBlock47']
+['R19CodeBlock46', 'R19CodeBlock47']
 
 cloneset13
-['R9CodeBlock17', 'R9CodeBlock18']
+['R19CodeBlock17', 'R19CodeBlock18']
 
 cloneset14
-['R9CodeBlock31', 'R9CodeBlock29']
+['R19CodeBlock31', 'R19CodeBlock29']
 
 cloneset15
-['R9CodeBlock19', 'R9CodeBlock20']
+['R19CodeBlock19', 'R19CodeBlock20']
 
 cloneset16
-['R9CodeBlock38', 'R9CodeBlock42']
+['R19CodeBlock38', 'R19CodeBlock42']
 
 cloneset17
-['R9CodeBlock13', 'R9CodeBlock14']
+['R19CodeBlock13', 'R19CodeBlock14']
 
 cloneset18
-['R9CodeBlock15', 'R9CodeBlock16']
+['R19CodeBlock15', 'R19CodeBlock16']
 
 cloneset19
-['R9CodeBlock25', 'R9CodeBlock26']
+['R19CodeBlock25', 'R19CodeBlock26']
 
 cloneset20
-['R9CodeBlock50', 'R9CodeBlock54']
+['R19CodeBlock50', 'R19CodeBlock54']
 
 cloneset21
-['R9CodeBlock49', 'R9CodeBlock53']
+['R19CodeBlock49', 'R19CodeBlock53']
 
 cloneset22
-['R9CodeBlock30', 'R9CodeBlock2']
+['R19CodeBlock30', 'R19CodeBlock2']
 
 cloneset23
-['R9CodeBlock11', 'R9CodeBlock12']
+['R19CodeBlock11', 'R19CodeBlock12']
 
 cloneset24
-['R9CodeBlock27', 'R9CodeBlock28']
+['R19CodeBlock27', 'R19CodeBlock28']
 
 cloneset25
-['R9CodeBlock21', 'R9CodeBlock22']
+['R19CodeBlock21', 'R19CodeBlock22']
 
 cloneset26
-['R9CodeBlock43', 'R9CodeBlock45']
+['R19CodeBlock43', 'R19CodeBlock45']
 
-cloning_percentage = nan
+cloning_percentage = 0.0
 FILE LEVEL INFORMATIONtotal_files = 0
-final_revision = 9
+final_revision = 19
 files_containing_clones = 36
 added_files = 36
 deleted_files = 0

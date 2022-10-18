@@ -15,7 +15,7 @@ if Config.extract_from_git == False:
 else:
     current_dataset,linesofcode,codeclonelines,total_files= data_extraction.extractMethods(Config.url)
     print("Extracting methods from files",total_files,"total_files")
-    print("load transformed dataset to ML model")
+    print("load transformed dataset to ML model",linesofcode,codeclonelines)
 
 
 
