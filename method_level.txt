@@ -1,0 +1,94 @@
+cloneset1
+['R1CodeBlock11', 'R1CodeBlock39', 'R2CodeBlock21', 'R2CodeBlock56', 'R3CodeBlock32', 'R3CodeBlock53', 'R4CodeBlock24', 'R4CodeBlock56']
+
+cloneset2
+['R1CodeBlock34', 'R1CodeBlock32', 'R2CodeBlock38', 'R2CodeBlock28', 'R3CodeBlock51', 'R3CodeBlock47', 'R4CodeBlock51', 'R4CodeBlock44']
+
+cloneset3
+['R1CodeBlock29', 'R1CodeBlock51', 'R2CodeBlock41', 'R2CodeBlock40', 'R3CodeBlock45', 'R3CodeBlock35', 'R4CodeBlock14', 'R4CodeBlock10']
+
+cloneset4
+['R1CodeBlock24', 'R1CodeBlock16', 'R2CodeBlock36', 'R2CodeBlock48', 'R3CodeBlock12', 'R3CodeBlock41', 'R4CodeBlock49', 'R4CodeBlock55']
+
+cloneset5
+['R1CodeBlock54', 'R1CodeBlock33', 'R2CodeBlock44', 'R2CodeBlock35', 'R3CodeBlock39', 'R3CodeBlock40', 'R4CodeBlock46', 'R4CodeBlock53']
+
+cloneset6
+['R1CodeBlock19', 'R1CodeBlock28', 'R2CodeBlock42', 'R2CodeBlock34', 'R3CodeBlock2', 'R3CodeBlock46', 'R4CodeBlock17', 'R4CodeBlock13']
+
+cloneset7
+['R1CodeBlock1', 'R1CodeBlock36', 'R2CodeBlock32', 'R2CodeBlock25', 'R3CodeBlock37', 'R3CodeBlock48', 'R4CodeBlock52', 'R4CodeBlock47']
+
+cloneset8
+['R1CodeBlock53', 'R1CodeBlock35', 'R2CodeBlock16', 'R2CodeBlock53', 'R3CodeBlock27', 'R3CodeBlock20', 'R4CodeBlock22', 'R4CodeBlock23']
+
+cloneset9
+['R1CodeBlock40', 'R1CodeBlock10', 'R2CodeBlock54', 'R2CodeBlock23', 'R3CodeBlock34', 'R3CodeBlock15', 'R4CodeBlock32', 'R4CodeBlock31']
+
+cloneset10
+['R1CodeBlock46', 'R1CodeBlock37', 'R2CodeBlock17', 'R2CodeBlock9', 'R3CodeBlock21', 'R3CodeBlock52', 'R4CodeBlock1', 'R4CodeBlock45']
+
+cloneset11
+['R1CodeBlock49', 'R1CodeBlock14', 'R2CodeBlock45', 'R2CodeBlock51', 'R3CodeBlock10', 'R3CodeBlock38', 'R4CodeBlock50', 'R4CodeBlock54']
+
+cloneset12
+['R1CodeBlock13', 'R1CodeBlock31', 'R2CodeBlock29', 'R2CodeBlock50', 'R3CodeBlock7', 'R3CodeBlock43', 'R4CodeBlock19', 'R4CodeBlock18']
+
+cloneset13
+['R1CodeBlock7', 'R1CodeBlock43', 'R2CodeBlock55', 'R2CodeBlock7', 'R3CodeBlock31', 'R3CodeBlock30', 'R4CodeBlock38', 'R4CodeBlock37']
+
+cloneset14
+['R1CodeBlock22', 'R1CodeBlock52', 'R2CodeBlock43', 'R2CodeBlock46', 'R3CodeBlock36', 'R3CodeBlock22', 'R4CodeBlock9', 'R4CodeBlock7']
+
+cloneset15
+['R1CodeBlock8', 'R1CodeBlock42', 'R2CodeBlock15', 'R2CodeBlock10', 'R3CodeBlock17', 'R3CodeBlock13', 'R4CodeBlock36', 'R4CodeBlock35']
+
+cloneset16
+['R1CodeBlock15', 'R1CodeBlock17', 'R2CodeBlock26', 'R2CodeBlock27', 'R3CodeBlock11', 'R3CodeBlock55', 'R4CodeBlock48', 'R4CodeBlock30']
+
+cloneset17
+['R1CodeBlock2', 'R1CodeBlock44', 'R2CodeBlock11', 'R2CodeBlock19', 'R3CodeBlock29', 'R3CodeBlock19', 'R4CodeBlock42', 'R4CodeBlock41']
+
+cloneset18
+['R1CodeBlock47', 'R1CodeBlock56', 'R2CodeBlock8', 'R2CodeBlock20', 'R3CodeBlock18', 'R3CodeBlock56', 'R4CodeBlock40', 'R4CodeBlock39']
+
+cloneset19
+['R1CodeBlock25', 'R1CodeBlock48', 'R2CodeBlock1', 'R2CodeBlock52', 'R3CodeBlock49', 'R3CodeBlock33', 'R4CodeBlock29', 'R4CodeBlock28']
+
+cloneset20
+['R1CodeBlock20', 'R1CodeBlock27', 'R2CodeBlock37', 'R2CodeBlock39', 'R3CodeBlock1', 'R3CodeBlock54', 'R4CodeBlock15', 'R4CodeBlock11']
+
+cloneset21
+['R1CodeBlock30', 'R1CodeBlock21', 'R2CodeBlock49', 'R2CodeBlock31', 'R3CodeBlock44', 'R3CodeBlock9', 'R4CodeBlock16', 'R4CodeBlock12']
+
+cloneset22
+['R1CodeBlock26', 'R1CodeBlock23', 'R2CodeBlock30', 'R2CodeBlock12', 'R3CodeBlock23', 'R3CodeBlock26', 'R4CodeBlock8', 'R4CodeBlock2']
+
+cloneset23
+['R1CodeBlock38', 'R1CodeBlock45', 'R2CodeBlock18', 'R2CodeBlock13', 'R3CodeBlock28', 'R3CodeBlock50', 'R4CodeBlock25', 'R4CodeBlock43']
+
+cloneset24
+['R1CodeBlock12', 'R1CodeBlock55', 'R2CodeBlock22', 'R2CodeBlock14', 'R3CodeBlock25', 'R3CodeBlock16', 'R4CodeBlock27', 'R4CodeBlock26']
+
+cloneset25
+['R1CodeBlock9', 'R1CodeBlock41', 'R2CodeBlock2', 'R2CodeBlock24', 'R3CodeBlock24', 'R3CodeBlock14', 'R4CodeBlock34', 'R4CodeBlock33']
+
+cloneset26
+['R1CodeBlock50', 'R1CodeBlock18', 'R2CodeBlock33', 'R2CodeBlock47', 'R3CodeBlock8', 'R3CodeBlock42', 'R4CodeBlock21', 'R4CodeBlock20']
+
+cloning_percentage = 16.034031413612563
+FILE LEVEL INFORMATIONtotal_files = 151
+final_revision = 4
+files_containing_clones = 36
+added_files = 0
+deleted_files = 0
+CLONESETS INFORMATIONtotal_clone_sets = 26
+stable_clonesets = 26
+new_clonesets = 0
+deleted_clonesets = 0
+changed_clonesets = 0
+CODECLONES INFORMATIONtotal_codeclones = 52
+stable_codeclones = 52
+new_codeclones = 0
+deleted_codeclones = 0
+changed_codeclones = 0
