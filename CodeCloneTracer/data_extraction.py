@@ -121,7 +121,7 @@ def extractMethods(url):
     current_dataset = current_dataset.drop_duplicates()
     current_dataset = current_dataset.reset_index(drop=True)
     current_dataset.to_csv(Config.granularity + 'tracking.csv')
-    return current_dataset, linesofcode, codeclonelines[0],len(filename_list)
+    return current_dataset, total_lines, codeclonelines[0],len(filename_list)
 
 def extractMethods(url,first_time = True):
     allFilesMethodsBlocks = {}
