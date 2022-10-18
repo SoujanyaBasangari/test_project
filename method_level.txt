@@ -1,94 +1,19 @@
 cloneset1
-['R19CodeBlock55', 'R19CodeBlock56']
+['R2CodeBlock1', 'R2CodeBlock2']
 
-cloneset2
-['R19CodeBlock39', 'R19CodeBlock32']
-
-cloneset3
-['R19CodeBlock51', 'R19CodeBlock44']
-
-cloneset4
-['R19CodeBlock36', 'R19CodeBlock40']
-
-cloneset5
-['R19CodeBlock37', 'R19CodeBlock41']
-
-cloneset6
-['R19CodeBlock48', 'R19CodeBlock52']
-
-cloneset7
-['R19CodeBlock1', 'R19CodeBlock33']
-
-cloneset8
-['R19CodeBlock8', 'R19CodeBlock10']
-
-cloneset9
-['R19CodeBlock23', 'R19CodeBlock24']
-
-cloneset10
-['R19CodeBlock7', 'R19CodeBlock9']
-
-cloneset11
-['R19CodeBlock34', 'R19CodeBlock35']
-
-cloneset12
-['R19CodeBlock46', 'R19CodeBlock47']
-
-cloneset13
-['R19CodeBlock17', 'R19CodeBlock18']
-
-cloneset14
-['R19CodeBlock31', 'R19CodeBlock29']
-
-cloneset15
-['R19CodeBlock19', 'R19CodeBlock20']
-
-cloneset16
-['R19CodeBlock38', 'R19CodeBlock42']
-
-cloneset17
-['R19CodeBlock13', 'R19CodeBlock14']
-
-cloneset18
-['R19CodeBlock15', 'R19CodeBlock16']
-
-cloneset19
-['R19CodeBlock25', 'R19CodeBlock26']
-
-cloneset20
-['R19CodeBlock50', 'R19CodeBlock54']
-
-cloneset21
-['R19CodeBlock49', 'R19CodeBlock53']
-
-cloneset22
-['R19CodeBlock30', 'R19CodeBlock2']
-
-cloneset23
-['R19CodeBlock11', 'R19CodeBlock12']
-
-cloneset24
-['R19CodeBlock27', 'R19CodeBlock28']
-
-cloneset25
-['R19CodeBlock21', 'R19CodeBlock22']
-
-cloneset26
-['R19CodeBlock43', 'R19CodeBlock45']
-
-cloning_percentage = 0.0
+cloning_percentage = 0.2973830293417922
 FILE LEVEL INFORMATIONtotal_files = 0
-final_revision = 19
-files_containing_clones = 36
-added_files = 36
+final_revision = 2
+files_containing_clones = 2
+added_files = 2
 deleted_files = 0
-CLONESETS INFORMATIONtotal_clone_sets = 26
+CLONESETS INFORMATIONtotal_clone_sets = 1
 stable_clonesets = 0
-new_clonesets = 26
+new_clonesets = 1
 deleted_clonesets = 0
 changed_clonesets = 0
-CODECLONES INFORMATIONtotal_codeclones = 52
+CODECLONES INFORMATIONtotal_codeclones = 2
 stable_codeclones = 0
-new_codeclones = 52
+new_codeclones = 2
 deleted_codeclones = 0
 changed_codeclones = 0

@@ -93,7 +93,7 @@ def extractMethods(url):
     current_dataset['nloc'] = current_dataset['nloc'].astype(int)
     #codeclonelines = current_dataset.groupby('codeBlockId').apply(lambda x: x['nloc'].unique()).sum()#['nloc']
     current_dataset['sum'] = current_dataset.groupby('codeBlockId')['nloc'].sum()
-    print(codeclonelines,type(codeclonelines),codeclonelines)
+    
     codeclonelines = current_dataset['sum'].sum()
     print("detecting code clones",len(cloneBlocks),codeclonelines)
     current_dataset = current_dataset[current_dataset["codeBlockId"].str.contains("old") == False]
@@ -143,7 +143,7 @@ def extractMethods_first(url):
     print('Total lines : {}'.format(sum(total_lines.values())))
     total_lines = sum(total_lines.values())
     codeBlocks={}
-    for commit in Repository(url,only_commits=[latest_commit]).traverse_commits():#,only_commits=[latest_commit]
+    for commit in Repository(url).traverse_commits():#,only_commits=[latest_commit]
         filename_list=[]
         for i in commit.modified_files:
             if i.filename.endswith('java'): 
@@ -203,8 +203,9 @@ def extractMethods_first(url):
     current_dataset = dataset_creation(cloneBlocks)
     current_dataset['nloc'] = current_dataset['nloc'].astype(int)
     #codeclonelines = current_dataset.groupby('codeBlockId').apply(lambda x: x['nloc'].unique()).sum()#['nloc']
-    codeclonelines = current_dataset.groupby('codeBlockId')['nloc'].sum()
-    codeclonelines = codeclonelines['nloc'].sum()
+    #current_dataset['sum'] = current_dataset.groupby('codeBlockId')['nloc'].sum()
+    
+    #codeclonelines = current_dataset['sum'].sum()
     print("detecting code clones",len(cloneBlocks),codeclonelines)
     
     current_dataset = current_dataset[current_dataset["codeBlockId"].str.contains("old") == False]
@@ -213,10 +214,8 @@ def extractMethods_first(url):
     if os.path.isfile(previous_file_name): 
         previous_dataset = pd.read_csv(previous_file_name, index_col=0)
         revision = previous_dataset.Revision.unique()
-        
         previous_clones = previous_dataset[~previous_dataset.codeBlock_fileinfo.isin(current_dataset.codeBlock_fileinfo)]
         frames = [current_dataset,previous_clones]
-        print("Revision", revision,revision[0] + 1)
         current_dataset = pd.concat([current_dataset, previous_dataset])
         current_dataset['Revision'] = revision[0] + 1
         current_dataset = current_dataset.loc[current_dataset.astype(str).drop_duplicates().index]
