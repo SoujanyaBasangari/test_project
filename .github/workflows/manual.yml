@@ -39,20 +39,20 @@ jobs:
       - name: install required packages 
         run: python -m pip install -r CodeCloneTracer/requirements.txt
       
-      - name: execute scripts
-        run: python CodeCloneTracer/Main.py
+      #- name: execute scripts
+      #  run: python CodeCloneTracer/Main.py
        
-      - name: Create report file
-        run: date +%s > tracking_result.txt
+      #- name: Create report file
+      #  run: date +%s > tracking_result.txt
         
-      - name: Create report file
-        run: date +%s > method_leveltracking.csv
+      #- name: Create report file
+      #  run: date +%s > method_leveltracking.csv
 
-      - name: Commit report
-        run: |
-          git config --global user.name 'soujanya'
-          git config --global user.email 'soujanya.basangari25@github.com'
-          git commit -am "clone tracking report"
-          git push
+      #- name: Commit report
+       # run: |
+        #  git config --global user.name 'soujanya'
+        # git config --global user.email 'soujanya.basangari25@github.com'
+        #  git commit -am "clone tracking report"
+        #  git push
 
         
